@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+    <header class="top container">
+      <div class="dashboard">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: 23,004</p>
+          </div>
+          <div class="theme col-sm-12 col-md-6">
+            <p>dark mode</p>
+            <div class="switch" id="switch" onclick="dark()">
+              <div class="switcher"></div>
+            </div>
+          </div>
+          <div class="boxes" id="bigBoxes">
+            <div class="box1">
+              <div class="line_facebook"></div>
+              <div class="main_cards">
+                <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+                @nathanf
+                <h1>1987</h1>
+                <p class="follow">Followers</p>
+                <p class="today">
+                  <img src="./images/icon-up.svg" alt="up" /> 12 Today
+                </p>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="line_twiter"></div>
+              <div class="main_cards">
+                <img src="./images/icon-twitter.svg" alt="icon-twiter" />
+                @nathanf
+                <h1>1044</h1>
+                <p class="follow">Followers</p>
+                <p class="today">
+                  <img src="./images/icon-up.svg" alt="up" /> 99 Today
+                </p>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="line_instagram"></div>
+              <div class="main_cards">
+                <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+                @realnathanf
+                <h1>11k</h1>
+                <p class="follow">Followers</p>
+                <p class="today">
+                  <img src="./images/icon-up.svg" alt="up" /> 1099 Today
+                </p>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="line_youtube"></div>
+              <div class="main_cards">
+                <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+                Nathan F.
+                <h1>8239</h1>
+                <p class="follow">Subscribers</p>
+                <p class="today_red">
+                  <img src="./images/icon-down.svg" alt="up" /> 144 Today
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row overview">
+          <h5>Overview - Today</h5>
+        </div>
+
+        <div class="row">
+          <div class="boxes2" id="smallBoxes1">
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p>Page Views</p>
+                  <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+                </div>
+                <div class="line2">
+                  <h1>87</h1>
+                  <p class="today2">
+                    <img src="./images/icon-up.svg" alt="icon-up" />3%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p>Likes</p>
+                  <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+                </div>
+                <div class="line2">
+                  <h1>52</h1>
+                  <p class="today2">
+                    <img src="./images/icon-up.svg" alt="icon-up" />2%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p>Likes</p>
+                  <img src="./images/icon-instagram.svg" alt="icon-facebook" />
+                </div>
+                <div class="line2">
+                  <h1>5462</h1>
+                  <p class="today2">
+                    <img src="./images/icon-up.svg" alt="icon-up" />2257%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p>Profile Views</p>
+                  <img src="./images/icon-instagram.svg" alt="icon-facebook" />
+                </div>
+                <div class="line2">
+                  <h1>52k</h1>
+                  <p class="today2">
+                    <img src="./images/icon-up.svg" alt="icon-up" />1375%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxes2" id="smallBoxes2">
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p> Retweets</p>
+                  <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+                </div>
+                <div class="line2">
+                  <h1>117</h1>
+                  <p class="today2">
+                    <img src="./images/icon-up.svg" alt="icon-up" /> 303%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p>Likes</p>
+                  <img src="./images/icon-twitter.svg" alt="icon-facebook" />
+                </div>
+                <div class="line2">
+                  <h1>507</h1>
+                  <p class="today2">
+                    <img src="./images/icon-up.svg" alt="icon-up" />553%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p>Likes</p>
+                  <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+                </div>
+                <div class="line2">
+                  <h1>107</h1>
+                  <p class="today2_red">
+                    <img src="./images/icon-down.svg" alt="icon-down" />19%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="small_cards">
+                <div class="line1">
+                  <p>Total Views</p>
+                  <img src="./images/icon-youtube.svg" alt="icon-facebook" />
+                </div>
+                <div class="line2">
+                  <h1>1407</h1>
+                  <p class="today2_red">
+                    <img src="./images/icon-down.svg" alt="icon-down" /> 12%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+ 
+
+  
+  
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  
+    <script src="../js/script.js"></script>
+  </body>
+</html>

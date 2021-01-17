@@ -1,0 +1,225 @@
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+.backGround{
+  background: hsl(230, 17%, 14%);
+}
+.top {
+  background: hsl(225, 100%, 98%);
+  position: relative; 
+  height: 250px;
+  border-radius: 0 0 20px 20px;
+}
+
+h1 {
+  color: black;
+  font-size: 26px;
+  font-weight: 700;
+}
+p {
+  color: hsl(228, 12%, 44%);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+.switch {
+  background: hsl(230, 22%, 74%);
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 25px;
+  height: 23px;
+  width: 45px;
+  margin-left: 15px;
+  padding: 2px;
+}
+.switch:hover {
+  background: linear-gradient(90deg, hsl(208, 92%, 53%), hsl(163, 72%, 41%));
+  cursor: pointer;
+}
+.switcher {
+  background: hsl(225, 100%, 98%);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.box1 {
+  background: hsl(225, 100%, 97%);
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.box1:hover {
+  background: hsl(216, 10%, 90%);
+  cursor: pointer;
+}
+.line_facebook {
+  width: 100%;
+  height: 5px;
+  background: hsl(208, 92%, 53%);
+}
+.line_twiter {
+  width: 100%;
+  height: 5px;
+  background: hsl(203, 89%, 53%);
+}
+.line_instagram {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.line_youtube {
+  width: 100%;
+  height: 5px;
+  background: hsl(348, 97%, 39%);
+}
+.main_cards {
+  margin-top: 20px;
+}
+.main_cards h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.follow {
+  margin-top: 0px;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.today {
+  margin-top: 20px;
+  font-size: 12px;
+  color: hsl(163, 72%, 41%);
+}
+.today_red {
+  margin-top: 20px;
+  font-size: 12px;
+  color: hsl(356, 69%, 56%);
+}
+
+.dashboard {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.theme {
+  display: flex;
+  border-top: 1px solid grey;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 15px;
+}
+.box1 {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.overview h5 {
+  margin-top: 25px;
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+}
+.boxes2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.box2{
+  width: 100%;
+  margin-bottom: 25px;
+  height: 150px;
+  background: hsl(225, 100%, 97%);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.box2:hover{  
+  background: hsl(216, 10%, 90%);
+  cursor: pointer;
+}
+.small_cards{
+  padding: 30px 25px;
+  text-align: justify;
+}
+.line1, .line2{
+  display: flex;
+  justify-content: space-between;
+}
+.line2{
+  margin-top: 35px;
+}
+.today2{
+  margin-top: 15px;
+  font-size: 12px;
+  color: hsl(163, 72%, 41%);
+}
+.today2_red{
+  margin-top: 15px;
+  font-size: 12px;
+  color:  hsl(356, 69%, 56%);
+}
+@media only screen and (min-width: 760px) {
+  .box1, .box2{
+    width: 45%;
+    margin-bottom: 25px;
+  }
+  .dashboard {
+    padding-top: 35px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .theme {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .box1, .box2 {
+    width: 23%;
+    margin-bottom: 25px;
+  }
+  .dashboard {
+    padding-top: 35px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .theme {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 0;
+  }
+}
+
+/* dark mode */
+
+.head{
+  background: hsl(232, 19%, 15%);  
+}
+.headline{
+color: white;
+}
+.modes{
+  background: linear-gradient(90deg, hsl(208, 92%, 53%), hsl(163, 72%, 41%));
+  justify-content: flex-start;
+}
+.darkBox{
+  background: hsl(228, 28%, 20%);
+}
+.darkBox:hover{
+  background: hsl(240, 18%, 25%);
+}
